@@ -5,6 +5,5 @@ export const siteConfig = {
   description: "Generate svg of github contributors.",
   links: {
     github: "https://github.com/xhofe/gh-contributors",
-    sponsor: "https://ko-fi.com/xhofe",
   },
 }

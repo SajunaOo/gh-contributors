@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: "https://jsd.nn.ci/gh/xhofe/xhofe/avatar/avatar.svg",
-    shortcut: "https://jsd.nn.ci/gh/xhofe/xhofe/avatar/avatar.svg",
-    apple: "https://jsd.nn.ci/gh/xhofe/xhofe/avatar/avatar.svg",
+    icon: "https://cdn.jsdmirror.com/gh/SajunaOo/Image/OpenList-Moe/favicon.ico",
+    shortcut: "https://cdn.jsdmirror.com/gh/SajunaOo/Image/OpenList-Moe/favicon.ico",
+    apple: "https://cdn.jsdmirror.com/gh/SajunaOo/Image/OpenList-Moe/favicon.ico",
   },
   viewport: "width=device-width, initial-scale=1",
 }

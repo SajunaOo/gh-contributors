@@ -21,43 +21,43 @@ const options = [
     name: "cols",
     type: "number",
     default: "12",
-    desc: "Number of avatars per row (default: 12)",
+    desc: "每行头像个数（默认：12）",
   },
   {
     name: "pages",
     type: "number",
     default: "1",
-    desc: "Number of pages to generate per repo (default: 1), 100 contributors per page",
+    desc: "每个仓库生成的页数（默认：1），每页100个贡献者",
   },
   {
     name: "radius",
     type: "number",
     default: "32",
-    desc: "The radius of the avatars (default: 32)",
+    desc: "头像半径（默认：32）",
   },
   {
     name: "space",
     type: "number",
     default: "5",
-    desc: "The spacing between avatars (default: 5)",
+    desc: "头像间距（默认：5）",
   },
   {
     name: "min_contributions",
     type: "number",
     default: "0",
-    desc: "Only show contributors with at least this number of contributions (default: 0)",
+    desc: "只显示最少贡献次数（默认：0）",
   },
   {
     name: "compress",
     type: "number",
     default: "",
-    desc: "The height/width of each avatar after compression (default: radius * 4, 0 to disable)",
+    desc: "压缩后的头像高度/宽度（默认：radius * 4，设为0禁用压缩）",
   },
   {
     name: "no_bot",
     type: "boolean",
     default: false,
-    desc: "Do not show bots (default: false)",
+    desc: "不显示机器人账户（默认：false）",
   },
 ]
 
@@ -107,7 +107,7 @@ export function Builder() {
     <>
       <Input
         ref={inputRef}
-        placeholder="Input your github repo as owner/repo"
+        placeholder="输入 GitHub 仓库地址，格式为 owner/repo"
         // variant="faded"
         // color="primary"
         className="w-full font-mono"
@@ -124,7 +124,7 @@ export function Builder() {
               add()
             }}
           >
-            Add
+            添加
           </Button>
         }
       />
@@ -143,7 +143,7 @@ export function Builder() {
       </div>
       <Accordion>
         <AccordionItem
-          title="Advanced Options"
+          title="高级选项"
           classNames={{
             trigger: "py-0",
           }}
@@ -223,7 +223,7 @@ export function Builder() {
                   size="sm"
                   color="primary"
                 >
-                  {copied ? "Copied!" : "Copy"}
+                  {copied ? "已复制！" : "复制"}
                 </Button>
               </div>
             </CardBody>
