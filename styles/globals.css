@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 移除 HeroUI 输入框聚焦时的边框与焦点环 */
+[data-slot="input"]:focus,
+[data-slot="input"]:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

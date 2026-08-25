@@ -164,7 +164,7 @@ export function Builder() {
           <div className="flex gap-2 flex-wrap items-center font-mono w-full">
             <Input
               label="org"
-              placeholder="Input your github org to fetch all repos"
+              placeholder="输入你的 GitHub 组织名，以获取该组织所有仓库"
               value={org}
               onChange={(e) => {
                 setOrg(e.target.value.trim())
